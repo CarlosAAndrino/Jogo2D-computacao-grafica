@@ -1,9 +1,24 @@
+html {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    height: 100%;
+    /* background-color: #f0f0f0; */
+
 }
 
 h1 {
@@ -11,20 +26,24 @@ h1 {
 }
 
 #Canvas {
-    border: 2px solid #333;
+    border: 2px solid #4CAF50;
     display: block;
     margin: 0 auto;
     background-color: white;
 }
 
 #startButton {
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 18px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
 }
 
 #startButton:disabled {
@@ -36,4 +55,3 @@ h1 {
     font-size: 24px;
     margin-top: 10px;
 }
-

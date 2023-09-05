@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Jogo da Cobrinha 2D</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <h1>Jogo da Cobrinha</h1>
-    <button id="startButton">Iniciar</button>
-    <p id="score">Placar: 0</p>
-    <canvas id="Canvas" width="400" height="400"></canvas>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <audio id="inicioSom" src="game-start.mp3"></audio>
+    <audio id="perderSom" src="game-over.mp3"></audio>
+    <audio id="comidaSom" src="mordida.mp3"></audio>
+  </head>
+  <body>
+    <div style="display: flex; height: 100%">
+      <div style="margin: auto">
+        <h1 style="margin: 0">Jogo da Cobrinha</h1>
+        <p id="score">Placar: 0</p>
+        <div style="position: relative">
+          <button id="startButton">Iniciar</button>
+          <canvas id="Canvas" width="400" height="400"></canvas>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
